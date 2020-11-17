@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Grand Theft Auto 5 Roleplay Server">
+        <meta name="keywords" content="Grand theft auto, GTA, Roleplay, Online, Server, godexdesign, portfolio, personal, modern, developer, designer, clean, onepage">
+        <meta name="author" content="Siim Iro">
+
+        <title>Rockstar Roleplay</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+        <!-- bootstrap -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- magnific-popup -->
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <!-- font-awesome -->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <!-- owl carousel -->
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        <!-- main style -->
+	    <link rel="stylesheet" href="style.css">
+	    <!-- animate css -->
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="assets/js/jquery-2.1.4.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+<body class="container-404">   
+<div class="container"> 
+   <div class="top">
+   <div class="grid_1000">
+      <div class="logo"></div>
+       <div class="menu">
+	  	<ul>
+		 <li><a href="index.html">Home</a></li>
+		 <li><a href="#">Forum</a></li>
+		 <li><a href="server.html">Server</a></li>
+		 <li><a href="contact.html">Contact</a></li>
+		 <li><a href="login.html">Login</a></li>
+		 <li><a class="rounded" href="register.html">Register</a></li>
+		</ul>
+	   </div>
+	  </div> 
+	 </div>	
+	     <div class="grid_1000">
+
+        <!-- ====== page-404 starts ====== -->
+        <section class="page-404 wow fadeIn" data-wow-delay=".2s">
+                <h3><span>Oops.... </span>Page Not Found!</h3>
+                <h4>404</h4>
+                <a href="index.html" class="btn btn-submit"> BACK TO HOME</a>
+        </section>
+        <!-- ====== page-404 ends ====== -->
+
+	    </div>
+	   </div>
+
+         <!-- JAVASCRIPTS AREA -->
+         <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+	    <!-- smooth scroll js -->
+        <script src="assets/js/jquery.sscr.js"></script>
+        <!-- typed js -->
+        <script src="assets/js/typed.js"></script>
+        <!-- stellar js -->
+        <script src="assets/js/jquery.stellar.min.js"></script>
+        <!-- counterup js -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+         <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- waypoints js -->
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+         <!-- mixitup js -->
+        <script src="assets/js/jquery.mixitup.js"></script>
+         <!-- validator js -->
+        <script src="assets/js/validator.min.js"></script>
+         <!-- contact js -->
+        <script src="assets/js/contact.js"></script>     
+         <!-- END JAVASCRIPTS AREA -->
+      <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+<script >$.fn.parallax = function ( resistance, mouse ) {
+	$el = $( this );
+	TweenLite.to( $el, 0.2, {
+		x : -(( mouse.clientX - (window.innerWidth/2) ) / resistance ),
+		y : -(( mouse.clientY - (window.innerHeight/2) ) / resistance )
+	});
+};
+$('.container').mousemove(function(e) {;
+  $('h3').parallax(140, e);
+  $('h4').parallax(60, e);
+});
+//# sourceURL=pen.js
+</script>
+</body>
+</html>
